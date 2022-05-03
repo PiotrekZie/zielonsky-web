@@ -9,21 +9,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e23e1e2cd6.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="root">
         <div class="navbar">
             <img src="/assets/img/zlogo.svg" alt="Zielonsky Logo" class="logoNav">
-            <button class="buttonNav">Home</button>
-            <button class="buttonNav">About</button>
-            <button class="buttonNav">Socials</button>
-            <button class="buttonNav">Contact</button>
-            <button>...</button>
+            <a class="buttonNav">Home</a>
+            <a href="#about" class="buttonNav">About</a>
+            <a href="https://github.com/PiotrekZie" class="buttonNav"><i class="fa-solid fa-link"></i> Socials</a>
+            <a class="buttonNav">Contact</a>
+            <a>...</a>
         </div>
-        <div class="main">
-            <img src="/assets/img/logo main.svg" alt="Zielonsky Logo" class="logoMain">
-            <h1>Miło Cie widzieć !</h1>
-        </div>
+            <div class="main">
+                <img src="/assets/img/logo main.svg" alt="Zielonsky Logo" class="logoMain">
+                <h1>Hey, I'm Peter</h1>
+                <h2>A Computer Engineer creating static websites.</h2>
+            </div>
+            <div id="about">
+                <h1>About Me</h1>
+                <p>I am a graduate of this year's Computer Science - Engineer degree (WSB Universities in Poznan) with a specialization in Graphics and Multimedia. I want to combine my career with the IT industry. </p>
+            </div>
     </div>
 </body>
 </html>
