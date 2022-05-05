@@ -52,7 +52,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    animation: GoraDol 2s infinite  alternate;
+    animation: LewoPrawo 2s infinite  alternate;
 }
 .main h2 {
     display: flex;
@@ -176,9 +176,10 @@ body {
 }
 .promo {
     background-color: #292929;
-
+    border-radius: 15px;
     width: 100%;
     margin-top: 50px;
+    padding-bottom: 15px;
 }
 .promo h1 {
     padding: 15px;
@@ -189,37 +190,58 @@ body {
 .promo p {
     text-align: center;
     padding: 0;
-    margin: 0;
+    margin-top: 5px;
+    color: white;
 }
 .promoCard {
-    margin: 12;
     display: flex;
     justify-content: center;
 }
-.promoProduct {
+.promoProductLeft {
     border-radius: 15px 0px 0px 15px;
     background-color: #414141;
     padding: 15px;
     margin: 5px;
 }
+.promoProductCenter {
+    background-color: #414141;
+    padding: 15px;
+    margin: 5px;
+}
+.promoProductRight {
+    border-radius: 0px 15px 15px 0px;
+    background-color: #414141;
+    padding: 15px;
+    margin: 5px;
+}
+.promoProductLeft:hover {
+    animation: Wysuwanie 1s infinite  alternate;
+    background-color: #575757;
+}
+.promoProductCenter:hover {
+    animation: Wysuwanie 1s infinite  alternate;
+    background-color: #575757;
+}
+.promoProductRight:hover {
+    animation: Wysuwanie 1s infinite  alternate;
+    background-color: #575757;
+}
 .promoIcon {
     width: 80px;
 }
+
+
 @keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-     }
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
-@keyframes GoraDol {
-    0% { 
-        transform: translate(-50%, -50%); 
-    }
-    100% { 
-        transform: translate(-47%, -50%); 
-    } 
+@keyframes LewoPrawo {
+    0% { transform: translate(-50%, -50%); }
+    100% { transform: translate(-47%, -50%); } 
+}
+@keyframes Wysuwanie {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
 }
 
 
